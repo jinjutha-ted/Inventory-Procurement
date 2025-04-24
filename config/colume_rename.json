@@ -1,0 +1,9 @@
+{
+    "item_type_drug": {
+      "PT1Spen": { "Dose QTY": "Dose Qty" }
+    },
+    "drug_receive": {
+      "PT1Spen": { "AppointmentDateTime": "AppointmentDatetime" }
+    }
+  }
+  

@@ -1,0 +1,19 @@
+{
+    "processed": {
+      "item_type_drug": {
+        "PLS": ".../PLSSpen.parquet",
+        "PT1": ".../PT1Spen.parquet"
+      },
+      "HN": { "PLS": "...", "PT1": "..." },
+      "drug_receive": { "PLS": "...", "PT1": "..."}
+    },
+    "combine": {
+      "df": ".../combine_df.parquet",
+      "df_clean": ".../combine_df_clean.parquet"
+    },
+    "summary_reports": {
+      "summary_v1": "...",
+      "summary_v2": "..."
+    }
+  }
+  

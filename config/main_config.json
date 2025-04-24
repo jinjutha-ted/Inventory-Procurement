@@ -1,0 +1,14 @@
+{
+    "version": 6,
+    "raw_data_folder_path": ".../data/raw",
+    "hn_raw_data_folder_path": ".../data/raw/HN",
+    "pharmaCo_folder": ".../data/master/PharmaCo",
+  
+    "configs": {
+      "data_paths": "config/data_paths.json",
+      "column_renames": "config/column_renames.json",
+      "filters": "config/filters.json",
+      "clinic_mappings": "config/clinic_code_map.json"
+    }
+  }
+  

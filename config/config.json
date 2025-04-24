@@ -1,0 +1,25 @@
+{
+    "plc_sale_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Raw Data/PLC TEST BI",
+    "plc_sale_convert_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PLC_Kae/SALE",
+    "plc_hismic_convert_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PLC_Kae/HISMIC",
+    "plc_orcmii_convert_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PLC_Kae/ORCMII",
+
+    "Inv_2024_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Raw Data/20250211_Data BI/ข้อมูลคลังสินค้า 2024",
+    "Inv_2025_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Raw Data/20250211_Data BI/ข้อมูลคลังสินค้า 2025",
+    "PO_2024_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Raw Data/20250211_Data BI/ข้อมูลจัดซื้อ 2024",
+    "PO_2025_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Raw Data/20250211_Data BI/ข้อมูลจัดซื้อ 2025",
+
+    "INV_REPORT_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/INV_REPORT",
+    "INV_ONHAND_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/INV_ONHAND",
+    "INV_VALUE_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/INV_VALUE",
+    "DOS_SALE_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/DOS_SALE",
+    "DOS_ITEM_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/DOS_ITEM",
+    "ORCMII_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/ORCMII",
+    "POSMIS_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/POSMIS",
+    "SSBMIC_folder_path": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory/2024/PT2/SSBMIC",
+
+    "INV_CLEAN_ROOT": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Result/clean_data/Inventory",
+    "INV_SOURCE_ROOT": "/Users/jinjuthatedcharoen/Documents/PPG/P'Aim/Inventory/Data/Raw Data/20250211_Data BI",
+
+    "combined_folder_path": "../../../Data/Result/clean_data/Combined"
+}

@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.swp
+.env
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.venv
+
+# IDE specific files (optional)
+.vscode/
+.idea/
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+.jupyter/
+.ipython/
+
+# OS and shell junk
+.zsh_history
+.zsh_sessions/
+.viminfo
+.lesshst
+
+# Temporary/hidden files
+~$*
+*.log
+
+# folders
+database/
+data/
+quick_share/
+src_backup/
+
+# Mac system files
+.DS_Store
+.Trash/
+~$*
+*.swp
+
+# Folders outside scope
+../../*
+../*# cleanup trigger

@@ -1,0 +1,10 @@
+{
+    "value_replace": {
+      "PTNSpen": { "Hospital Site": { "PTP": "PTN" } }
+    },
+    "excluded_doctors": [
+      "PLSR401รายได้อื่น",
+      "PT1CHK03Check Up  Premium."
+    ]
+  }
+  
