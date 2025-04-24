@@ -12,12 +12,12 @@ venv/
 dist/
 build/
 
-# Environment variables
-.venv
-
 # IDE specific files (optional)
 .vscode/
 .idea/
+
+# Ignore pyenv shims and build files
+.python-version
 
 # Jupyter and IPython
 .ipynb_checkpoints/

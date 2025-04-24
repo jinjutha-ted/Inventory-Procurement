@@ -72,3 +72,16 @@ src/function/ | All reusable transformation logic
 src/monthly_run/ | Entry scripts for running the full pipeline
 database/ | DB connection and SQL logic (if used)
 Inv/ | One-off or exploratory scripts (e.g., site-specific work)
+
+## 🐍 Python Environment Setup
+
+This project uses [pyenv](https://github.com/pyenv/pyenv) and [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv).
+
+To get started:
+
+```bash
+brew install pyenv pyenv-virtualenv
+pyenv install 3.11.9
+pyenv virtualenv 3.11.9 inventory-venv
+pyenv local inventory-venv
+pip install -r requirements.txt
