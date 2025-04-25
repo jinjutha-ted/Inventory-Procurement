@@ -1,0 +1,1764 @@
+.
+├── .DS_Store
+├── .gitignore
+├── .python-version
+├── .vscode
+│   └── settings.json
+├── README.md
+├── config
+│   ├── clinic.json
+│   ├── colume_rename.json
+│   ├── config.json
+│   ├── data_path.json
+│   ├── filter.json
+│   └── main_config.json
+├── data
+│   ├── .DS_Store
+│   ├── Master Data
+│   │   ├── 20250411_Catagory.xlsx
+│   │   └── MASTER ORG & SUNINVENTORY.xlsx
+│   ├── Raw Data
+│   │   ├── .DS_Store
+│   │   ├── 20250211_Data BI
+│   │   │   ├── .DS_Store
+│   │   │   ├── ข้อมูลจัดซื้อ 2024
+│   │   │   │   ├── G5 PO Line Summary DEC-2024 ALL BU.xlsx
+│   │   │   │   ├── G5 PO Line Summary NOV-2024 ALL BU.xlsx
+│   │   │   │   └── G5 PO Line Summary OCT-2024 ALL BU.xlsx
+│   │   │   ├── ข้อมูลจัดซื้อ 2025
+│   │   │   ├── ข้อมูลคลังสินค้า 2024
+│   │   │   │   ├── .DS_Store
+│   │   │   │   ├── PLC
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP24.xls
+│   │   │   │   │   ├── HISMIC JAN-DEC 2024.XLS
+│   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_060125.xls
+│   │   │   │   ├── PLK
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP24.xls
+│   │   │   │   │   ├── HISMIC JAN-DEC24.xls
+│   │   │   │   │   ├── ORCMII JAN-DEC24.xls
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_300125.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xls
+│   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xls
+│   │   │   │   ├── PLR
+│   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_140125_PLR.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP2024.xls
+│   │   │   │   │   ├── HISMIC JAN-DEC2024.xls
+│   │   │   │   │   ├── ORCMII JAN-DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_130125.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP2024.xls
+│   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_140125_1-31 DEC24.xls
+│   │   │   │   ├── PLS
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP24.xls
+│   │   │   │   │   ├── ORCMII JAN-DEC24.XLS
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_030225.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP24.xls
+│   │   │   │   │   └── SSBMIC JAN-DEC24.XLS
+│   │   │   │   ├── PS2
+│   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_060225.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP24.xls
+│   │   │   │   │   ├── HISMIC JAN-DEC24.XLS
+│   │   │   │   │   ├── ORCMII JAN-DEC24.XLS
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_050225.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.XLS
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.XLS
+│   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.XLS
+│   │   │   │   ├── PT1
+│   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_170125_PT1.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP2024.xls
+│   │   │   │   │   ├── ORCMII JAN-DEC2024.xls
+│   │   │   │   │   ├── POSMIS JAN-DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_170125.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP2024.xls
+│   │   │   │   │   └── SSBMIC JAN-DEC2024.xls
+│   │   │   │   ├── PT2
+│   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_170125_PT2.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP2024.xls
+│   │   │   │   │   ├── ORCMII JAN-DEC2024.xls
+│   │   │   │   │   ├── POSMIS JAN-DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_170125.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP2024.xls
+│   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xls
+│   │   │   │   │   └── SSBMIC JAN-DEC2024.xls
+│   │   │   │   ├── PT3
+│   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_070225_PT3.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP2024.xls
+│   │   │   │   │   ├── POSMIS JAN-DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_070225.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP2024.xls
+│   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_070225_1-31 DEC24.xls
+│   │   │   │   │   └── SSBMIC JAN-DEC2024.xls
+│   │   │   │   ├── PTN
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP24.xls
+│   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_030225.xls
+│   │   │   │   ├── PTP
+│   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_170125_PTP.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xls
+│   │   │   │   │   ├── G5_Inventory_Value_Report___by_SEP2024.xls
+│   │   │   │   │   ├── ORCMII JAN-DEC2024.xls
+│   │   │   │   │   ├── POSMIS JAN-DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_150125.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xls
+│   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP2024.xls
+│   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xls
+│   │   │   │   │   └── SSBMIC JAN-DEC2024.xls
+│   │   │   │   └── PTS
+│   │   │   │       ├── G5_Inventory_Current_On_Hand_b_150125.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_APR24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_AUG24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_DEC24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_FEB24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_JAN24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_JUL24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_JUN24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_MAR24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_MAY24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_NOV24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_OCT24.xls
+│   │   │   │       ├── G5_Inventory_Value_Report___by_SEP24.xls
+│   │   │   │       ├── ORCMII JAN-DEC 2024.XLS
+│   │   │   │       ├── POSMIS JAN-DEC 2024.XLS
+│   │   │   │       ├── PYT_DOS___Extract_Item_Informa_100125.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_APR24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xls
+│   │   │   │       ├── PYT_DOS___Sale_Transaction__Ne_SEP24.xls
+│   │   │   │       ├── PYT_รายงานข้อมูลการรับสินค้า_1-31 DEC 2024.xls
+│   │   │   │       └── SSBMIC JAN-DEC 2024.XLS
+│   │   │   └── ข้อมูลคลังสินค้า 2025
+│   │   │       ├── .DS_Store
+│   │   │       ├── PLC
+│   │   │       │   ├── G5_Inventory_Value_Report___by_060225.xls
+│   │   │       │   ├── HISMIC JAN25.XLS
+│   │   │       │   ├── ORCMII JAN25.XLS
+│   │   │       │   ├── ORCMII+HISMIC JAN25.xlsx
+│   │   │       │   ├── PYT_DOS___Extract_Item_Informa_060225.xls
+│   │   │       │   └── PYT_DOS___Sale_Transaction__Ne_060225.xls
+│   │   │       ├── PLK
+│   │   │       │   ├── G5_Inventory_Value_Report___by_070225.xls
+│   │   │       │   ├── HISMIC.XLS
+│   │   │       │   ├── ORCMII.XLS
+│   │   │       │   └── PYT_DOS___Extract_Item_Informa_070225.xls
+│   │   │       ├── PLS
+│   │   │       │   ├── G5_Inventory_Value_Report___by_070225.xls
+│   │   │       │   ├── ORCMII.XLS
+│   │   │       │   ├── PYT_DOS___Extract_Item_Informa_070225.xls
+│   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_070225.xls
+│   │   │       │   └── SSBMIC.XLS
+│   │   │       ├── PS2
+│   │   │       │   ├── .DS_Store
+│   │   │       │   ├── G5_Inventory_Value_Report___by_JAN25.xls
+│   │   │       │   ├── HISMIC JAN25.XLS
+│   │   │       │   ├── ORCMII JAN25.XLS
+│   │   │       │   ├── PYT_DOS___Extract_Item_Informa_050225.xls
+│   │   │       │   └── PYT_DOS___Sale_Transaction__Ne_JAN25.XLS
+│   │   │       └── PTN
+│   │   │           ├── G5_Inventory_Value_Report___by_070225.xls
+│   │   │           ├── ORCMII.XLS
+│   │   │           ├── PYT_DOS___Extract_Item_Informa_070225.xls
+│   │   │           ├── PYT_DOS___Sale_Transaction__Ne_070225.xls
+│   │   │           └── SSBMIC.XLS
+│   │   ├── 20250325_clean_data (shared)
+│   │   │   ├── Inventory
+│   │   │   │   ├── 2024
+│   │   │   │   │   ├── PLC
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_060125.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   └── HISMIC JAN-DEC 2024.xlsx
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_310325_PLC.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_310325_JAN-DEC2024.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC24.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLC_Kae
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   ├── PLC_HISMIC_APR.xlsx
+│   │   │   │   │   │   │   ├── PLC_HISMIC_AUG.xlsx
+│   │   │   │   │   │   │   ├── PLC_HISMIC_JUL.xlsx
+│   │   │   │   │   │   │   ├── PLC_HISMIC_JUN.xlsx
+│   │   │   │   │   │   │   ├── PLC_HISMIC_MAR.xlsx
+│   │   │   │   │   │   │   └── PLC_HISMIC_MAY.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── PLC_ORCMII_APR.xlsx
+│   │   │   │   │   │   │   ├── PLC_ORCMII_AUG.xlsx
+│   │   │   │   │   │   │   ├── PLC_ORCMII_JUL.xlsx
+│   │   │   │   │   │   │   ├── PLC_ORCMII_JUN.xlsx
+│   │   │   │   │   │   │   ├── PLC_ORCMII_MAR.xlsx
+│   │   │   │   │   │   │   └── PLC_ORCMII_MAY.xlsx
+│   │   │   │   │   │   └── SALE
+│   │   │   │   │   │       ├── PLC_SALE_APR.xlsx
+│   │   │   │   │   │       ├── PLC_SALE_AUG.xlsx
+│   │   │   │   │   │       ├── PLC_SALE_JUL.xlsx
+│   │   │   │   │   │       ├── PLC_SALE_JUN.xlsx
+│   │   │   │   │   │       ├── PLC_SALE_MAR.xlsx
+│   │   │   │   │   │       └── PLC_SALE_MAY.xlsx
+│   │   │   │   │   ├── PLD
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLK
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_300125.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   └── HISMIC JAN-DEC24.xlsx
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_310325_PLK.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_310325_JAN-DEC2024.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC24.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLR
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_130125.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   └── HISMIC JAN-DEC2024.xlsx
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_140125_PLR.xlsx
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_140125_1-31 DEC24.xlsx
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │   │   │   │   │   └── ORCMII
+│   │   │   │   │   │       └── ORCMII JAN-DEC2024.xlsx
+│   │   │   │   │   ├── PLS
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_030225.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_310325_PLS.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_310325_JAN-DEC2024.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC24.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       └── SSBMIC JAN-DEC24.xlsx
+│   │   │   │   │   ├── PS2
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_050225.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   └── HISMIC JAN-DEC24.xlsx
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_060225.xlsx
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_310325_JAN-DEC2024.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC24.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PT1
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_170125.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_170125_PT1.xlsx
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xlsx
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   └── POSMIS JAN-DEC2024.xlsx
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │   │   │   │   ├── PT2
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_170125.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_170125_PT2.xlsx
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xlsx
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   └── POSMIS JAN-DEC2024.xlsx
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │   │   │   │   ├── PT3
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_070225_PT3.xlsx
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_070225_1-31 DEC24.xlsx
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   └── POSMIS JAN-DEC2024.xlsx
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │   │   │   │   ├── PTN
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_030225.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PTN_DOS___Sale_Transaction__Ne_NOV2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PTN.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_310325_JAN-DEC2024.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC24.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       └── SSBMIC JAN-DEC24.xls
+│   │   │   │   │   ├── PTP
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_150125.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_170125_PTP.xlsx
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xlsx
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   └── POSMIS JAN-DEC2024.xlsx
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │   │   │   │   └── PTS
+│   │   │   │   │       ├── DOS_ITEM
+│   │   │   │   │       │   └── PYT_DOS___Extract_Item_Informa_100125.xlsx
+│   │   │   │   │       ├── DOS_SALE
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │   │   │   │       │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │   │   │   │       ├── HISMIC
+│   │   │   │   │       ├── INV_ONHAND
+│   │   │   │   │       │   └── G5_Inventory_Current_On_Hand_b_150125.xlsx
+│   │   │   │   │       ├── INV_REPORT
+│   │   │   │   │       │   └── PYT_รายงานข้อมูลการรับสินค้า_1-31 DEC 2024.xlsx
+│   │   │   │   │       ├── INV_VALUE
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │   │   │   │       │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │   │   │   │       ├── ORCMII
+│   │   │   │   │       │   └── ORCMII JAN-DEC 2024.xlsx
+│   │   │   │   │       ├── POSMIS
+│   │   │   │   │       │   └── POSMIS JAN-DEC 2024.xlsx
+│   │   │   │   │       └── SSBMIC
+│   │   │   │   │           └── SSBMIC JAN-DEC 2024.xlsx
+│   │   │   │   ├── 2025
+│   │   │   │   │   ├── PLC
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_040425.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_050325.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_060225.xlsx
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_040425.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_060225.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   ├── HISMIC FEB25.XLS
+│   │   │   │   │   │   │   ├── HISMIC JAN25.xlsx
+│   │   │   │   │   │   │   └── HISMIC MAR25.XLS
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-31 JAN25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_040425.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_060225.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB25.xls
+│   │   │   │   │   │   │   ├── ORCMII JAN25.xlsx
+│   │   │   │   │   │   │   └── ORCMII MAR25.XLS
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLD
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLK
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_060325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_070225.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_MAR2025.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   ├── HISMIC FEB2025.xls
+│   │   │   │   │   │   │   ├── HISMIC JAN2025.XLS
+│   │   │   │   │   │   │   └── HISMIC MAR2025.xls
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PLK.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PLK.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_080425_1-31 MAR2025.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-31 JAN25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB2025.xls
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.XLS
+│   │   │   │   │   │   │   └── ORCMII MAR2025.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLR
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_030325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_080425.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_280325.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   ├── HISMIC FEB2025.xls
+│   │   │   │   │   │   │   ├── HISMIC JAN2025.xls
+│   │   │   │   │   │   │   └── HISMIC MAR2025.xls
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PLR.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_030325_PLR.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PLR.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_030325_1-31 JAN25.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_080425_1-31 MAR25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB2025.xls
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.xls
+│   │   │   │   │   │   │   └── ORCMII MAR2025.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PLS
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_060325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_MAR2025.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_070225.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PLS.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PLS.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_080425_1-31 MAR2025.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-31 JAN25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_070225.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB2025.xls
+│   │   │   │   │   │   │   ├── ORCMII MAR2025.xls
+│   │   │   │   │   │   │   └── ORCMII.xlsx
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       ├── SSBMIC FEB2025.xls
+│   │   │   │   │   │       ├── SSBMIC JAN2025.xlsx
+│   │   │   │   │   │       └── SSBMIC MAR2025.xls
+│   │   │   │   │   ├── PS2
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_050225.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_100425.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_130325.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN25.xlsx
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR25.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   │   ├── HISMIC JAN25.xlsx
+│   │   │   │   │   │   │   └── HISMIC MAR25.XLS
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PS2.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PS2.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 JAN25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB25.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN25.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR25.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB25.XLS
+│   │   │   │   │   │   │   ├── ORCMII JAN25.xlsx
+│   │   │   │   │   │   │   └── ORCMII MAR25.XLS
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   ├── PT1
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_030325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_080425.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_280325.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PT1.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_030325_PT1.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PT1.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_030325_1-31 JAN25.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_080425.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB2025.xls
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.xls
+│   │   │   │   │   │   │   └── ORCMII MAR2025.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   ├── POSMIS FEB2025.xls
+│   │   │   │   │   │   │   ├── POSMIS JAN2025.xls
+│   │   │   │   │   │   │   └── POSMIS MAR2025.xls
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       ├── SSBMIC FEB2025.xls
+│   │   │   │   │   │       ├── SSBMIC JAN2025.xls
+│   │   │   │   │   │       └── SSBMIC MAR2025.xls
+│   │   │   │   │   ├── PT2
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_030325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_FEB2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_MAR2025.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PT2.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_030325_PT2.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PT2.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_030325_1-31 JAN25.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_040425_1-31 MAR25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB25.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB'25.xls
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.xls
+│   │   │   │   │   │   │   └── ORCMII MAR25.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   ├── POSMIS FEB'25.xls
+│   │   │   │   │   │   │   ├── POSMIS JAN2025.xls
+│   │   │   │   │   │   │   └── POSMIS MAR25.xls
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       ├── SSBMIC FEB'25.xls
+│   │   │   │   │   │       ├── SSBMIC JAN2025.xls
+│   │   │   │   │   │       └── SSBMIC MAR25.xls
+│   │   │   │   │   ├── PT3
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_030325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_060325.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_MAR2025.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PT3.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_030325_PT3.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PT3.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_030325_1-31 JAN25.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_080425_1-31 MAR2025.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28FEB25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB2025.xls
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.xls
+│   │   │   │   │   │   │   └── ORCMII MAR2025.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   ├── POSMIS FEB2025.xls
+│   │   │   │   │   │   │   ├── POSMIS JAN2025.xls
+│   │   │   │   │   │   │   └── POSMIS MAR2025.xls
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       ├── SSBMIC FEB2025.xls
+│   │   │   │   │   │       ├── SSBMIC JAN2025.xls
+│   │   │   │   │   │       └── SSBMIC MAR2025.xls
+│   │   │   │   │   ├── PTN
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_070325.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_080425.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_070225.xlsx
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_080425.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PTN.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-31 JAN25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xlsx
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR25.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII FEB2025.XLS
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.xlsx
+│   │   │   │   │   │   │   └── ORCMII MAR2025.XLS
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       ├── SSBMIC FEB25.XLS
+│   │   │   │   │   │       ├── SSBMIC JAN25.xlsx
+│   │   │   │   │   │       └── SSBMIC MAR25.XLS
+│   │   │   │   │   ├── PTP
+│   │   │   │   │   │   ├── DOS_ITEM
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_030325.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Extract_Item_Informa_060325.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Extract_Item_Informa_080425.xls
+│   │   │   │   │   │   ├── DOS_SALE
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │   │   ├── HISMIC
+│   │   │   │   │   │   ├── INV_ONHAND
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_010425_PTP.xlsx
+│   │   │   │   │   │   │   ├── G5_Inventory_Current_On_Hand_b_030325_PTP.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Current_On_Hand_b_280325_PTP.xls
+│   │   │   │   │   │   ├── INV_REPORT
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_030325_1-31 JAN25.xls
+│   │   │   │   │   │   │   ├── PYT_รายงานข้อมูลการรับสินค้า_080425_1-31 MAR25.xls
+│   │   │   │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28FEB25.xls
+│   │   │   │   │   │   ├── INV_VALUE
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │   │   │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │   │   ├── ORCMII
+│   │   │   │   │   │   │   ├── ORCMII JAN2025.xls
+│   │   │   │   │   │   │   ├── ORCMII_FEB2025.xls
+│   │   │   │   │   │   │   └── ORCMII_MAR2025.xls
+│   │   │   │   │   │   ├── POSMIS
+│   │   │   │   │   │   │   ├── POSMIS JAN2025.xls
+│   │   │   │   │   │   │   ├── POSMIS_FEB2025.xls
+│   │   │   │   │   │   │   └── POSMIS_MAR2025.xls
+│   │   │   │   │   │   └── SSBMIC
+│   │   │   │   │   │       ├── SSBMIC JAN2025.xls
+│   │   │   │   │   │       ├── SSBMIC_FEB2025.xls
+│   │   │   │   │   │       └── SSBMIC_MAR2025.xls
+│   │   │   │   │   └── PTS
+│   │   │   │   │       ├── DOS_ITEM
+│   │   │   │   │       │   ├── PYT_DOS___Extract_Item_Informa_080425.xls
+│   │   │   │   │       │   ├── PYT_DOS___Extract_Item_Informa_130325.xls
+│   │   │   │   │       │   └── PYT_DOS___Extract_Item_Informa_170225.xls
+│   │   │   │   │       ├── DOS_SALE
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2025.xls
+│   │   │   │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2025.xls
+│   │   │   │   │       │   └── PYT_DOS___Sale_Transaction__Ne_MAR2025.xls
+│   │   │   │   │       ├── HISMIC
+│   │   │   │   │       ├── INV_ONHAND
+│   │   │   │   │       │   ├── G5_Inventory_Current_On_Hand_b_010425.xls
+│   │   │   │   │       │   └── G5_Inventory_Current_On_Hand_b_280325_PTS.xls
+│   │   │   │   │       ├── INV_REPORT
+│   │   │   │   │       │   ├── PYT_รายงานข้อมูลการรับสินค้า_280325_1-28 FEB2025.xls
+│   │   │   │   │       │   └── PYT_รายงานข้อมูลการรับสินค้า_280325_1-31 JAN25.xls
+│   │   │   │   │       ├── INV_VALUE
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_FEB2025.xls
+│   │   │   │   │       │   ├── G5_Inventory_Value_Report___by_JAN2025.xls
+│   │   │   │   │       │   └── G5_Inventory_Value_Report___by_MAR2025.xls
+│   │   │   │   │       ├── ORCMII
+│   │   │   │   │       │   ├── ORCMII FEB2025.XLS
+│   │   │   │   │       │   ├── ORCMII JAN2025.XLS
+│   │   │   │   │       │   └── ORCMII MAR2025.XLS
+│   │   │   │   │       ├── POSMIS
+│   │   │   │   │       │   ├── POSMIS FEB2025.XLS
+│   │   │   │   │       │   ├── POSMIS JAN2025.XLS
+│   │   │   │   │       │   └── POSMIS MAR2025.XLS
+│   │   │   │   │       └── SSBMIC
+│   │   │   │   │           ├── SSBMIC FEB2025.XLS
+│   │   │   │   │           ├── SSBMIC JAN2025.XLS
+│   │   │   │   │           └── SSBMIC MAR2025.XLS
+│   │   │   │   └── 2026
+│   │   │   │       └── create folder Inventory.bat
+│   │   │   └── Procurement
+│   │   │       ├── 2024
+│   │   │       │   └── PO Line Summary - ALL BU
+│   │   │       │       ├── G5 PO Line Summary DEC-2024 ALL BU.xlsx
+│   │   │       │       ├── G5 PO Line Summary NOV-2024 ALL BU.xlsx
+│   │   │       │       └── G5 PO Line Summary OCT-2024 ALL BU.xlsx
+│   │   │       └── 2025
+│   │   │           └── PO Line Summary - ALL BU
+│   │   │               ├── G5_PO_Line_Summary_Report_ FEB 2025.xlsx
+│   │   │               ├── G5_PO_Line_Summary_Report_ JAN 2025.xlsx
+│   │   │               └── G5_PO_Line_Summary_Report_ MAR 2025.xlsx
+│   │   └── PLC TEST BI
+│   │       ├── .DS_Store
+│   │       ├── PLC_HISMIC_APR.xls
+│   │       ├── PLC_HISMIC_AUG.xls
+│   │       ├── PLC_HISMIC_JUL.xls
+│   │       ├── PLC_HISMIC_JUN.xls
+│   │       ├── PLC_HISMIC_MAR.xls
+│   │       ├── PLC_HISMIC_MAY.xls
+│   │       ├── PLC_Item_Informa_AUG.xls
+│   │       ├── PLC_ORCMII_APR.xls
+│   │       ├── PLC_ORCMII_AUG.xls
+│   │       ├── PLC_ORCMII_JUL.xls
+│   │       ├── PLC_ORCMII_JUN.xls
+│   │       ├── PLC_ORCMII_MAR.xls
+│   │       ├── PLC_ORCMII_MAY.xls
+│   │       ├── PLC_SALE_APR.xls
+│   │       ├── PLC_SALE_AUG.xls
+│   │       ├── PLC_SALE_JUL.xls
+│   │       ├── PLC_SALE_JUN.xls
+│   │       ├── PLC_SALE_MAR.xls
+│   │       ├── PLC_SALE_MAY.xls
+│   │       └── PYT_รายงานข้อมูลการรับสินค้า_021224.xls
+│   ├── Result
+│   │   ├── .DS_Store
+│   │   ├── Combined
+│   │   │   ├── DOS_SALE
+│   │   │   │   └── pt2_sale_combined.parquet
+│   │   │   ├── HISMIC
+│   │   │   │   └── pt2_hismic_combined.parquet
+│   │   │   ├── INV_VALUE
+│   │   │   │   └── pt2_combined.parquet
+│   │   │   ├── ORCMII
+│   │   │   │   └── pt2_orcmii_combined.parquet
+│   │   │   ├── POSMIS
+│   │   │   │   └── pt2_posmis_combined.parquet
+│   │   │   └── SSBMIC
+│   │   │       └── pt2_ssbmic_combined.parquet
+│   │   └── clean_data
+│   │       ├── Inventory
+│   │       │   ├── 2024
+│   │       │   │   ├── PLC
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_060125.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   ├── PLC_Kae
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   │   ├── PLC_HISMIC_APR.xlsx
+│   │       │   │   │   │   ├── PLC_HISMIC_AUG.xlsx
+│   │       │   │   │   │   ├── PLC_HISMIC_JUL.xlsx
+│   │       │   │   │   │   ├── PLC_HISMIC_JUN.xlsx
+│   │       │   │   │   │   ├── PLC_HISMIC_MAR.xlsx
+│   │       │   │   │   │   └── PLC_HISMIC_MAY.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   │   ├── PLC_ORCMII_APR.xlsx
+│   │       │   │   │   │   ├── PLC_ORCMII_AUG.xlsx
+│   │       │   │   │   │   ├── PLC_ORCMII_JUL.xlsx
+│   │       │   │   │   │   ├── PLC_ORCMII_JUN.xlsx
+│   │       │   │   │   │   ├── PLC_ORCMII_MAR.xlsx
+│   │       │   │   │   │   └── PLC_ORCMII_MAY.xlsx
+│   │       │   │   │   └── SALE
+│   │       │   │   │       ├── PLC_SALE_APR.xlsx
+│   │       │   │   │       ├── PLC_SALE_AUG.xlsx
+│   │       │   │   │       ├── PLC_SALE_JUL.xlsx
+│   │       │   │   │       ├── PLC_SALE_JUN.xlsx
+│   │       │   │   │       ├── PLC_SALE_MAR.xlsx
+│   │       │   │   │       └── PLC_SALE_MAY.xlsx
+│   │       │   │   ├── PLK
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_300125.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   │   └── HISMIC JAN-DEC24.xlsx
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   ├── PLR
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_130125.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   │   └── HISMIC JAN-DEC2024.xlsx
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   │   └── G5_Inventory_Current_On_Hand_b_140125_PLR.xlsx
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_140125_1-31 DEC24.xlsx
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   ├── PLS
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_030225.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   │   └── ORCMII JAN-DEC24.xlsx
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   │       └── SSBMIC JAN-DEC24.xlsx
+│   │       │   │   ├── PS2
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_050225.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   │   └── HISMIC JAN-DEC24.xlsx
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   │   └── G5_Inventory_Current_On_Hand_b_060225.xlsx
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   │   └── ORCMII JAN-DEC24.xlsx
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   ├── PT1
+│   │       │   │   │   ├── .DS_Store
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │       │   │   │   │   └── ~$PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   ├── PT2
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_170125.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   │   └── G5_Inventory_Current_On_Hand_b_170125_PT2.xlsx
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xlsx
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │       │   │   ├── PT3
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   │   └── G5_Inventory_Current_On_Hand_b_070225_PT3.xlsx
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_070225_1-31 DEC24.xlsx
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   │   └── POSMIS JAN-DEC2024.xlsx
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │       │   │   ├── PTN
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_030225.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   ├── PTP
+│   │       │   │   │   ├── DOS_ITEM
+│   │       │   │   │   │   └── PYT_DOS___Extract_Item_Informa_150125.xlsx
+│   │       │   │   │   ├── DOS_SALE
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_APR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_AUG2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_DEC2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_FEB2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JAN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUL2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_JUN2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAR2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_MAY2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_NOV2024.xlsx
+│   │       │   │   │   │   ├── PYT_DOS___Sale_Transaction__Ne_OCT2024.xlsx
+│   │       │   │   │   │   └── PYT_DOS___Sale_Transaction__Ne_SEP2024.xlsx
+│   │       │   │   │   ├── HISMIC
+│   │       │   │   │   ├── INV_ONHAND
+│   │       │   │   │   │   └── G5_Inventory_Current_On_Hand_b_170125_PTP.xlsx
+│   │       │   │   │   ├── INV_REPORT
+│   │       │   │   │   │   └── PYT_รายงานข้อมูลการรับสินค้า_170125_1-31 DEC24.xlsx
+│   │       │   │   │   ├── INV_VALUE
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_APR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_AUG2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_DEC2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_FEB2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JAN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUL2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_JUN2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAR2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_MAY2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_NOV2024.xlsx
+│   │       │   │   │   │   ├── G5_Inventory_Value_Report___by_OCT2024.xlsx
+│   │       │   │   │   │   └── G5_Inventory_Value_Report___by_SEP2024.xlsx
+│   │       │   │   │   ├── ORCMII
+│   │       │   │   │   │   └── ORCMII JAN-DEC2024.xlsx
+│   │       │   │   │   ├── POSMIS
+│   │       │   │   │   │   └── POSMIS JAN-DEC2024.xlsx
+│   │       │   │   │   └── SSBMIC
+│   │       │   │   │       └── SSBMIC JAN-DEC2024.xlsx
+│   │       │   │   └── PTS
+│   │       │   │       ├── DOS_ITEM
+│   │       │   │       │   └── PYT_DOS___Extract_Item_Informa_100125.xlsx
+│   │       │   │       ├── DOS_SALE
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_APR24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_AUG24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_DEC24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_FEB24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JAN24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JUL24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_JUN24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_MAR24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_MAY24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_NOV24.xlsx
+│   │       │   │       │   ├── PYT_DOS___Sale_Transaction__Ne_OCT24.xlsx
+│   │       │   │       │   └── PYT_DOS___Sale_Transaction__Ne_SEP24.xlsx
+│   │       │   │       ├── HISMIC
+│   │       │   │       ├── INV_ONHAND
+│   │       │   │       │   └── G5_Inventory_Current_On_Hand_b_150125.xlsx
+│   │       │   │       ├── INV_REPORT
+│   │       │   │       │   └── PYT_รายงานข้อมูลการรับสินค้า_1-31 DEC 2024.xlsx
+│   │       │   │       ├── INV_VALUE
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_APR24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_AUG24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_DEC24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_FEB24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_JAN24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_JUL24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_JUN24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_MAR24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_MAY24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_NOV24.xlsx
+│   │       │   │       │   ├── G5_Inventory_Value_Report___by_OCT24.xlsx
+│   │       │   │       │   └── G5_Inventory_Value_Report___by_SEP24.xlsx
+│   │       │   │       ├── ORCMII
+│   │       │   │       │   └── ORCMII JAN-DEC 2024.xlsx
+│   │       │   │       ├── POSMIS
+│   │       │   │       │   └── POSMIS JAN-DEC 2024.xlsx
+│   │       │   │       └── SSBMIC
+│   │       │   │           └── SSBMIC JAN-DEC 2024.xlsx
+│   │       │   └── 2025
+│   │       │       ├── PLC
+│   │       │       │   ├── DOS_ITEM
+│   │       │       │   │   └── PYT_DOS___Extract_Item_Informa_060225.xlsx
+│   │       │       │   ├── DOS_SALE
+│   │       │       │   │   └── PYT_DOS___Sale_Transaction__Ne_060225.xlsx
+│   │       │       │   ├── HISMIC
+│   │       │       │   │   └── HISMIC JAN25.xlsx
+│   │       │       │   ├── INV_ONHAND
+│   │       │       │   ├── INV_REPORT
+│   │       │       │   ├── INV_VALUE
+│   │       │       │   │   └── G5_Inventory_Value_Report___by_060225.xlsx
+│   │       │       │   ├── ORCMII
+│   │       │       │   │   ├── ORCMII JAN25.xlsx
+│   │       │       │   │   └── ORCMII+HISMIC JAN25.xlsx
+│   │       │       │   ├── POSMIS
+│   │       │       │   └── SSBMIC
+│   │       │       ├── PLK
+│   │       │       │   ├── DOS_ITEM
+│   │       │       │   │   └── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │       │       │   ├── DOS_SALE
+│   │       │       │   ├── HISMIC
+│   │       │       │   │   └── HISMIC.xlsx
+│   │       │       │   ├── INV_ONHAND
+│   │       │       │   ├── INV_REPORT
+│   │       │       │   ├── INV_VALUE
+│   │       │       │   │   └── G5_Inventory_Value_Report___by_070225.xlsx
+│   │       │       │   ├── ORCMII
+│   │       │       │   │   └── ORCMII.xlsx
+│   │       │       │   ├── POSMIS
+│   │       │       │   └── SSBMIC
+│   │       │       ├── PLS
+│   │       │       │   ├── DOS_ITEM
+│   │       │       │   │   └── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │       │       │   ├── DOS_SALE
+│   │       │       │   │   └── PYT_DOS___Sale_Transaction__Ne_070225.xlsx
+│   │       │       │   ├── HISMIC
+│   │       │       │   ├── INV_ONHAND
+│   │       │       │   ├── INV_REPORT
+│   │       │       │   ├── INV_VALUE
+│   │       │       │   │   └── G5_Inventory_Value_Report___by_070225.xlsx
+│   │       │       │   ├── ORCMII
+│   │       │       │   │   └── ORCMII.xlsx
+│   │       │       │   ├── POSMIS
+│   │       │       │   └── SSBMIC
+│   │       │       │       └── SSBMIC.xlsx
+│   │       │       ├── PS2
+│   │       │       │   ├── DOS_ITEM
+│   │       │       │   │   └── PYT_DOS___Extract_Item_Informa_050225.xlsx
+│   │       │       │   ├── DOS_SALE
+│   │       │       │   │   └── PYT_DOS___Sale_Transaction__Ne_JAN25.xlsx
+│   │       │       │   ├── HISMIC
+│   │       │       │   │   └── HISMIC JAN25.xlsx
+│   │       │       │   ├── INV_ONHAND
+│   │       │       │   ├── INV_REPORT
+│   │       │       │   ├── INV_VALUE
+│   │       │       │   │   └── G5_Inventory_Value_Report___by_JAN25.xlsx
+│   │       │       │   ├── ORCMII
+│   │       │       │   │   └── ORCMII JAN25.xlsx
+│   │       │       │   ├── POSMIS
+│   │       │       │   └── SSBMIC
+│   │       │       └── PTN
+│   │       │           ├── DOS_ITEM
+│   │       │           │   └── PYT_DOS___Extract_Item_Informa_070225.xlsx
+│   │       │           ├── DOS_SALE
+│   │       │           │   └── PYT_DOS___Sale_Transaction__Ne_070225.xlsx
+│   │       │           ├── HISMIC
+│   │       │           ├── INV_ONHAND
+│   │       │           ├── INV_REPORT
+│   │       │           ├── INV_VALUE
+│   │       │           │   └── G5_Inventory_Value_Report___by_070225.xlsx
+│   │       │           ├── ORCMII
+│   │       │           │   └── ORCMII.xlsx
+│   │       │           ├── POSMIS
+│   │       │           └── SSBMIC
+│   │       │               └── SSBMIC.xlsx
+│   │       └── Procurement
+│   │           ├── 2024
+│   │           │   ├── G5 PO Line Summary NOV-2024 ALL BU.xlsx
+│   │           │   └── G5 PO Line Summary OCT-2024 ALL BU.xlsx
+│   │           └── 2025
+│   └── ref
+│       ├── .DS_Store
+│       └── G5 Movement 122024 ส่งออก
+│           ├── G5 _ Non & Slow move _Medicine_DEC 2024.xlsx
+│           ├── PLK_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PLR_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PLS_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PS2_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PT1_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PT2_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PT3_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PTN_MOVEMENT_DEC'24 V1.xlsx
+│           ├── PTP_MOVEMENT_DEC'24 V1.xlsx
+│           └── PTS_MOVEMENT_DEC'24 V1.xlsx
+├── database
+│   ├── connection.py
+│   ├── init_db.py
+│   ├── schema
+│   │   └── table.sql
+│   └── utils.py
+├── folder_structure.txt
+├── quick_share
+│   └── clean_data.zip
+├── requirements.txt
+└── src
+    ├── .DS_Store
+    ├── Inv
+    │   ├── 2024_plc_kae.py
+    │   ├── PT2
+    │   │   └── 2024_pt2.py
+    │   ├── chart.py
+    │   ├── clean_data.py
+    │   └── load_data.py
+    └── function
+        ├── __init__.py
+        ├── addColumn.py
+        ├── appendData.py
+        ├── clean.py
+        ├── combine.py
+        ├── config.py
+        ├── dataFrame.py
+        ├── exportExcel.py
+        ├── filter.py
+        ├── import_data.py
+        ├── loadToCombine.py
+        ├── load_config.py
+        └── parseThaiDate.py
+
+466 directories, 1296 files
